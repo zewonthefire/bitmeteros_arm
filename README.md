@@ -2,10 +2,10 @@
 
 [Pre-compiled binary for arm64 available here](https://github.com/zewonthefire/bitmeteros_arm/blob/master/build/linux/bitmeteros_0.7.6-arm64.deb)
 
-## /Update notice for ARM
+## Update notice for ARM
 For you own security, please compile your own deb package using the build.sh script located in build/linux/. It requires the libsql-dev package (apt-get install libsql-dev).
 once it's compiled (or for some stupid reason you want to use the precompiled binary), you can run dpkg -i bitmeteros_0.7.6-arm64.deb. Enjoy!
-## Update notice for ARM/
+
 
 BitMeter OS is a free, open-source bandwidth monitor that works on Windows, Linux and Mac OSX. 
 BitMeter OS keeps track of how much you use your internet/network connection, and allows you to view this information either via a web browser, or by using the [command line tools](http://codebox.org.uk/pages/bitmeteros/bmclient/man).
