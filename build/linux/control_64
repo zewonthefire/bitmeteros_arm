@@ -2,7 +2,7 @@ Package: bitmeteros
 Version: 0.7.6
 Priority: optional
 Section: net
-Architecture: amd64
+Architecture: arm64
 Depends: libsqlite3-0 (>= 3.4.2)
 Conflicts: bitmeter
 Replaces: bitmeter

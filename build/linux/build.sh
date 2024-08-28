@@ -8,7 +8,7 @@ export VERSION=0.7.6
 WORK_DIR=./work
 WEB_DIR=../../webserver/web
 DB_FILE=../bitmeter.db
-if [ $(arch) = "x86_64" ]; then
+if [ $(arch) = "x86_64" ] || [ $(arch) = "aarch64" ]; then
 	IS_64=1
 else 
 	IS_64=0
@@ -60,7 +60,7 @@ tar -cpf - --exclude=CVS --exclude=.cvsignore debian| sh -c "cd $WORK_DIR; tar -
 dpkg-deb --build $WORK_DIR/debian
 
 if [ $IS_64 = 1 ]; then
-	mv $WORK_DIR/debian.deb bitmeteros_$VERSION-amd64.deb
+	mv $WORK_DIR/debian.deb bitmeteros_$VERSION-arm64.deb
 else
 	mv $WORK_DIR/debian.deb bitmeteros_$VERSION-i386.deb
 fi
