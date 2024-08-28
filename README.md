@@ -7,6 +7,7 @@ For you own security, please compile your own deb package using the build.sh scr
 once it's compiled (or for some stupid reason you want to use the precompiled binary), you can run dpkg -i bitmeteros_0.7.6-arm64.deb. Enjoy!
 
 
+## About BitMeter OS
 BitMeter OS is a free, open-source bandwidth monitor that works on Windows, Linux and Mac OSX. 
 BitMeter OS keeps track of how much you use your internet/network connection, and allows you to view this information either via a web browser, or by using the [command line tools](http://codebox.org.uk/pages/bitmeteros/bmclient/man).
 
