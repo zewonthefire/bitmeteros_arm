@@ -37,7 +37,7 @@ extern char* helpTxt;
 
 void doHelp(){
 	doVersion();
-	printf(helpTxt);
+	printf("%s", helpTxt);
 }
 
 void doVersion(){

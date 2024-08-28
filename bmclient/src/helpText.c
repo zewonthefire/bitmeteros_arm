@@ -1,6 +1,7 @@
-#include "common.h" 
-char* helpTxt= 
+#include "common.h"
+char* helpTxt=
 "Provides command-line access to the BitMeterOS database" EOL
+"" EOL
 "Usage:" EOL
 "    bmclient -h|-v|-m<mode> <mode specific options>" EOL
 " " EOL
@@ -85,5 +86,5 @@ char* helpTxt=
 "    bmclient -h" EOL
 " " EOL
 "Email: rob@codebox.org.uk" EOL
-"Web:   http://codebox.org.uk/bitmeterOs" EOL
-; 
+"Web:   http://codebox.org.uk/bitmeteros" EOL
+;
