@@ -73,7 +73,7 @@ struct Action actions[] = {
 };
 
 int main(int argc, char **argv){
-    printf(COPYRIGHT);
+    printf("%s", COPYRIGHT);
     setLogLevel(LOG_INFO);
 
 	if (argc == 1){
@@ -150,11 +150,11 @@ static int setAccessLevel(int level, char* successMsg, char* failMsg){
     int currentAccessLevel = getConfigInt(CONFIG_WEB_ALLOW_REMOTE, 0);
     int status;
     if (currentAccessLevel == level){
-        printf(failMsg);
+        printf("%s", failMsg);
         status = FAIL;
     } else {
         setConfigIntValue(CONFIG_WEB_ALLOW_REMOTE, level);
-        printf(successMsg);
+        printf("%s", successMsg);
         status = SUCCESS;
     }
     return status;
@@ -183,7 +183,7 @@ static int doWebRemoteAdmin(FILE* file, int argc, char** argv){
 
 extern char* helpTxt;
 static int doHelp(){
-	printf(helpTxt);
+	printf("%s", helpTxt);
 	return SUCCESS;
 }
 

@@ -26,7 +26,7 @@
 #include "common.h"
 #include <unistd.h>
 #include <stdio.h>
-
+#include <sys/wait.h>
 // Executes commands used to stop/start the data capture and web server processes
 
 #ifdef _WIN32
@@ -78,7 +78,7 @@
 			int status;
 
 			if (pid == 0){
-				execvp(args[0], args);
+				execvp(args[0], (char * const *)args);
 				_exit(1);
 				return SUCCESS; // TODO correct?
 				
