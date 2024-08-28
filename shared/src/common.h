@@ -171,7 +171,7 @@ int setConfigIntValue(char* key, int value);
 int rmConfigValue(char* key);
 int getDbVersion();
 // ----
-struct DateCriteria* makeDateCriteria(char* yearTxt, char* monthTxt, char* dayTxt, char* weekdayTxt, char* hourTxt);
+struct DateCriteria* makeDateCriteria(const char* yearTxt,const  char* monthTxt,const  char* dayTxt,const  char* weekdayTxt,const  char* hourTxt);
 int isDateCriteriaMatch(struct DateCriteria* criteria, time_t ts);
 time_t findFirstMatchingDate(struct DateCriteria* criteria, time_t now);
 // ----
@@ -186,7 +186,7 @@ struct Alert* allocAlert();
 void freeAlert(struct Alert* alert);
 void appendAlert(struct Alert** earlierAlert, struct Alert* newAlert);
 void setAlertName(struct Alert* alert, const char* name);
-struct DateCriteriaPart* makeDateCriteriaPart(char* txt);
+struct DateCriteriaPart* makeDateCriteriaPart(const char* Txt);
 void freeDateCriteriaPart(struct DateCriteriaPart* criteriaPart);
 char* dateCriteriaPartToText(struct DateCriteriaPart* part);
 void appendDateCriteria(struct DateCriteria** earlierCriteria, struct DateCriteria* newCriteria);
@@ -214,8 +214,8 @@ void toTime(char* timeText, time_t ts);
 void toDate(char* dateText, time_t ts);
 void makeHexString(char* hexString, const char* data, int dataLen);
 BW_INT strToBwInt(char* txt, BW_INT defaultValue);
-long strToLong(char* txt, long defaultValue);
-int strToInt(char* txt, int defaultValue);
+long strToLong(const char* txt, long defaultValue);
+int strToInt(const char* txt, int defaultValue);
 char *trim(char *str);
 // ----
 time_t getTime();

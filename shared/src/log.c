@@ -105,7 +105,7 @@ void vlogMsg(int level, char* msg, va_list argp){
 
             fprintf(logFile, "%d-%02d-%02d %02d:%02d:%02d ", y, mo, d, h, mi, s);
             if (appName != NULL){
-                fprintf(logFile, appName);
+                fprintf(logFile, "%s", appName);
                 fprintf(logFile, " ");
             }
         }

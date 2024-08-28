@@ -455,11 +455,11 @@ static struct DateCriteria* getIntervalForId(sqlite3_stmt *stmtSelectInterval, i
     sqlite3_bind_int(stmtSelectInterval, 1, id);
     int rc = sqlite3_step(stmtSelectInterval);
     
-    char* yearTxt;
-    char* monthTxt;
-    char* dayTxt;
-    char* weekdayTxt;
-    char* hourTxt;
+    const char* yearTxt;
+    const char* monthTxt;
+    const char* dayTxt;
+    const char* weekdayTxt;
+    const char* hourTxt;
     
     struct DateCriteria* result = NULL;
     

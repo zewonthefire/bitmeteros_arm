@@ -179,7 +179,7 @@ BW_INT strToBwInt(char* txt, BW_INT defaultValue){
     }
 }
 
-long strToLong(char* txt, long defaultValue){
+long strToLong(const char* txt, long defaultValue){
     if (txt == NULL){
         return defaultValue;
     } else {
@@ -194,7 +194,7 @@ long strToLong(char* txt, long defaultValue){
     }
 }
 
-int strToInt(char* txt, int defaultValue){
+int strToInt(const char* txt, int defaultValue){
     return (int) strToLong(txt, defaultValue);
 }
 

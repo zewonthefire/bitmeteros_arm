@@ -163,7 +163,7 @@ char* dateCriteriaPartToText(struct DateCriteriaPart* part){
     return txt;
 }
     
-struct DateCriteriaPart* makeDateCriteriaPart(char* txt){
+struct DateCriteriaPart* makeDateCriteriaPart(const char* txt){
 	if (txt == NULL){
 		logMsg(LOG_ERR, "makeDateCriteriaPart argument was NULL");
 		return NULL;
@@ -236,7 +236,7 @@ struct DateCriteriaPart* makeDateCriteriaPart(char* txt){
 	}
 }
 
-struct DateCriteria* makeDateCriteria(char* yearTxt, char* monthTxt, char* dayTxt, char* weekdayTxt, char* hourTxt){
+struct DateCriteria* makeDateCriteria(const char* yearTxt,const  char* monthTxt,const  char* dayTxt,const  char* weekdayTxt,const  char* hourTxt){
 	struct DateCriteria* result = malloc(sizeof(struct DateCriteria));
 	result->year    = makeDateCriteriaPart(yearTxt);
 	result->month   = makeDateCriteriaPart(monthTxt);
