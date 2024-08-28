@@ -25,6 +25,8 @@
 
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
+#include <stdlib.h>
 #include "bmws.h"
 #include "client.h"
 #include "common.h"

@@ -22,7 +22,7 @@
  * You should have received a copy of the GNU General Public License
  * along with BitMeterOS.  If not, see <http://www.gnu.org/licenses/>.
  */
-
+#include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "bmws.h"

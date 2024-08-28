@@ -33,7 +33,7 @@
 #include <string.h>
 #include "bmws.h"
 #include "common.h"
-
+#include <sys/socket.h>
 /*
 Contains HTTP-related functions, mostly for reading in requests and writing out responses.
 */
