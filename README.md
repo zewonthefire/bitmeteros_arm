@@ -1,6 +1,6 @@
 ## BitMeter OS for ARM _ Im not the creator, just a simple dude adpting some code for personal use ##
 
-[Pre-compiled binary for arm64 available here]([https://github.com/zewonthefire/bitmeteros_arm/blob/master/build/linux/bitmeteros_0.7.6-arm64.deb])
+[Pre-compiled binary for arm64 available here](https://github.com/zewonthefire/bitmeteros_arm/blob/master/build/linux/bitmeteros_0.7.6-arm64.deb)
 
 ## /Update notice for ARM
 For you own security, please compile your own deb package using the build.sh script located in build/linux/. It requires the libsql-dev package (apt-get install libsql-dev).
