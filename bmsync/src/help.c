@@ -36,7 +36,7 @@ Help text is read from the helpText.c file which is generated during the build p
 extern char* helpTxt;
 
 void doHelp(){
-	printf(helpTxt);
+	printf("%s", helpTxt);
 }
 
 void doVersion(){
